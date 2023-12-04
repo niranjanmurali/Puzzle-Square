@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Puzzle Square</title>
+        <link rel="stylesheet" href="Puzzle.css">
+        <script src="Puzzle.js"></script>
+    </head>
+
+    <body>
+        <h1>Puzzle Square</h1>
+        <hr>
+        <h2>Score: <span id="score">0</span></h2>
+        <div id="board">
+        </div>
+        <a href="instruction.html" class="previous">&laquo; Previous</a>
+        <!-- sound button -->
+    <button id="audioToggle">Sound On/Off</button>
+
+    <audio id="gameAudio" loop>
+        <source src="game theme/videoplayback.weba" type="audio/mp3">
+    </audio>
+    <audio id="gameAudio" loop volume="0.5">
+        <source src="game theme/videoplayback.weba" type="audio/mp3">
+    </audio>
+    </body>
+</html>

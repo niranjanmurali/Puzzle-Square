@@ -1,0 +1,59 @@
+body{
+    background-image: url(Puzzle\ Square\ background.webp);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    position: absolute;
+    left: 640px;
+    top: 200px;
+    color: #000;
+    font-family: Nico Moji;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.button1{
+    position: absolute;
+    left: 700px;
+    top: 400px;
+    width: 100px;
+    height: 40px;
+    color: black;
+    background-color: #FA0707;
+}
+/* #Music{
+    position: absolute;
+    left: 1350px;
+    top: 20px;
+    color: #000;
+    background-color: #FA0707;
+}
+.Musiconoff{
+ color: black;
+ background-color: #FA0707;
+ font-size: 24px;
+ font-family: New Rocker;
+ font-weight: 400;
+ position: absolute;
+ left: 1300px;
+ word-wrap: break-word;
+}
+.MusicOnOff :hover{
+    box-shadow:10px 10px #FA0707;
+} */
+/* .Start{
+color: #FA0707;
+ font-size: 48px;
+ font-family: Nico Moji;
+ font-weight: 400;
+ word-wrap: break-word;
+} */
+#audioToggle{
+    position: absolute;
+    left: 1300px;
+    top: 40px;
+    background-color: red;
+}
