@@ -8,9 +8,18 @@ body{
 }
 strong{
     text-align: center;
+    font-family: New Rocker;
+    color: black;
     text-decoration: dotted;
-    font-size: x-large;
+    font-size: xx-large;
     
+}
+#audioToggle{
+    position: absolute;
+    left: 1400px;
+    top: 20px;
+    font-family: New Rocker;
+    background-color: red;
 }
 h1{
     font-family:New Rocker;

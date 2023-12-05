@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: New Rocker;
     text-align: center;
-    background-image: url(Puzzle\ square\ 4th\ page.jpg);
-    overflow: hidden;
+    background-image: url(Game\ zone.webp);
+    overflow: visible;
     background-repeat: no-repeat;
     background-size: cover;
     backface-visibility: visible;
@@ -16,22 +16,28 @@ hr {
     width: 400px;
     height: 400px;
 
-    background-image: url(Puzzle\ square\ 4th\ page.jpg);
+    background-image: url(Game\ zone.webp);
     background-repeat:repeat;
     overflow: hidden;
     backface-visibility: visible;
-    border: 6px solid #030200;
+    /* border: 6px solid #030200; */
 
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
+#score{
+    color: red;
+}
+h2{
+    color: red;
+}
 
 .tile {
     width: 90px;
     height: 90px;
-    border: 5px solid #bbada0;
-
+    border: 5px solid #070400;
+    backface-visibility: visible;
     font-size: 40px;
     font-weight: bold;
     display: flex;
@@ -43,68 +49,68 @@ hr {
 /* colored tiles */
 
 .x2 {
-    background-color: #eee4da;
-    color: #727371;
+    background-color: red;
+    color: #050900;
 }
 
 .x4 {
-    background-color: #ece0ca;
-    color: #727371;
+    background-color:red;
+    color: black;
 }
 
 .x8 {
-    background-color: #f4b17a;
-    color: white;
+    background-color: red;
+    color: black;
 }
 
 .x16{
-    background-color: #f59575;
-    color: white;
+    background-color: red;
+    color: black;
 }
 
 .x32{
-    background-color: #f57c5f;
-    color: white;
+    background-color: red;
+    color: black;
 }
 
 .x64{
-    background-color: #f65d3b;
-    color: white;
+    background-color: red;
+    color: black;
 }
 
 .x128{
-    background-color: #edce71;
-    color: white;
+    background-color: red;
+    color: black;
 }
 
 .x256{
-    background-color: #edcc63;
-    color: white;
+    background-color: red;
+    color: black;
 }
 
 .x512{
-    background-color: #edc651;
-    color: white;
+    background-color: red;
+    color: black;
 }
 
 .x1024{
-    background-color: #eec744;
-    color: white;
+    background-color: red;
+    color: black;
 }
 
 .x2048{
-    background-color: #ecc230;
-    color: white;
+    background-color: red;
+    color: black;
 }
 
 .x4096 {
-    background-color: #fe3d3d;
-    color: white;
+    background-color: red;
+    color: black;
 }
 
 .x8192 {
-    background-color: #ff2020;
-    color: white;
+    background-color: red;
+    color: black;
 }
 a {
     text-decoration: none;
@@ -113,12 +119,12 @@ a {
   }
   
   a:hover {
-    background-color: #f30202;
+    background-color: red;
     color: black;
   }
   
   .previous {
-    background-color: #f70505;
+    background-color: red;
     color: black;
     position: absolute;
     left: 10px;
@@ -130,3 +136,65 @@ a {
     top: 40px;
     background-color: red;
 }
+/* @media (orientation: landscape) {
+    body {
+    flex-direction: row;
+    background-image: url(Game\ zone.webp);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 100%;
+    background-size: cover;
+    } 
+} */
+/* @media only screen and (max-device-width: 480px) {
+  body {
+    background-image: url(./Game\ zone.webp); 
+    background-size: 200% 200%; 
+   } 
+  } */
+  /* @media only screen and(max-width: 400px) {
+    body {
+        font-family: New Rocker;
+        text-align: center;
+        background-image: url(Game\ zone.webp);
+        overflow: visible;
+        background-repeat: repeat;
+        background-size: cover;
+        backface-visibility: visible;
+    }
+} */
+
+@media only screen and (max-width: 760px){
+    #board {
+        width: 300px;
+        height: 300px;
+    
+        background-image: url(Game\ zone.webp);
+        background-repeat:no-repeat;
+        overflow: hidden;
+        backface-visibility: visible;
+        /* border: 6px solid #030200; */
+    
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    body {
+        font-family: New Rocker;
+        text-align: center;
+        background-image: url(Game\ zone.webp);
+        overflow: hidden;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-wrap: wrap;
+        background-size: cover;
+        /* backface-visibility: visible; */
+    }
+}
+/* @media (orientaton:landscape) {
+    
+} */

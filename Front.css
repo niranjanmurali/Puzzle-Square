@@ -6,7 +6,7 @@ body{
 }
 h1{
     position: absolute;
-    left: 640px;
+    left: 550px;
     top: 200px;
     color: #000;
     font-family: Nico Moji;
@@ -17,6 +17,7 @@ h1{
 }
 .button1{
     position: absolute;
+    font-family: Nico Moji;
     left: 700px;
     top: 400px;
     width: 100px;
@@ -24,36 +25,16 @@ h1{
     color: black;
     background-color: #FA0707;
 }
-/* #Music{
-    position: absolute;
-    left: 1350px;
-    top: 20px;
-    color: #000;
-    background-color: #FA0707;
-}
-.Musiconoff{
- color: black;
- background-color: #FA0707;
- font-size: 24px;
- font-family: New Rocker;
- font-weight: 400;
- position: absolute;
- left: 1300px;
- word-wrap: break-word;
-}
-.MusicOnOff :hover{
-    box-shadow:10px 10px #FA0707;
-} */
-/* .Start{
-color: #FA0707;
- font-size: 48px;
- font-family: Nico Moji;
- font-weight: 400;
- word-wrap: break-word;
-} */
+
 #audioToggle{
     position: absolute;
-    left: 1300px;
-    top: 40px;
+    font-family: New Rocker;
+    left: 1400px;
+    top: 20px;
     background-color: red;
 }
+  @media screen and (min-width: 768px) {
+    body {
+    font-size: 18px;
+    }
+   }

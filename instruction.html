@@ -25,13 +25,23 @@
 <br>
 *For combining tiles you can use top arrow, left arrow, down arrow, right arrow.
     </strong>
-    <a href="Front.html" class="previous">&laquo; Previous</a>
-<a href="index.html" class="next">Next &raquo;</a>
+    <a href="Front.html" class="previous">Previous</a>
+<a href="index.html" class="next">Next </a>
 
-<a href="#" class="previous round">&#8249;</a>
-<a href="#" class="next round">&#8250;</a>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
-      </style>
+<a href="#" class="previous round"></a>
+<a href="#" class="next round"></a>
+    
+       <button id="audioToggle">Music On/Off</button>
+
+       <audio id="gameAudio" loop>
+           <source src="love is gone theme.mp3" type="audio/mp3">
+       </audio>
+       <audio id="gameAudio" loop volume="0.5">
+           <source src="love is gone theme.mp3" type="audio/mp3">
+       </audio>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+  </style>
 </body>
+<script src="instruction.js"></script>
 </html>
