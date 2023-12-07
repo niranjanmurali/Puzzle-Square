@@ -2,7 +2,10 @@ var board;
 var score = 0;
 var rows = 4;
 var columns = 4;
-
+const left = document.getElementById("Left")
+const right = document.getElementById("Right")
+const up = document.getElementById("Up")
+const down = document.getElementById("Down")
 window.onload = function() {
     setGame();
 }
@@ -50,6 +53,27 @@ function updateTile(tile, num) {
         }                
     }
 }
+left.addEventListener("click",function(){
+    slideLeft();
+    setTwo();
+});
+right.addEventListener("click",function(){
+    slideRight();
+    setTwo();
+});
+up.addEventListener("click",function(){
+    slideUp();
+    setTwo();
+});
+down.addEventListener("click",function(){
+    slideDown();
+    setTwo();
+
+    // document.getElementById("score").innerHTML = score;
+
+});
+
+
 document.addEventListener('keyup', (e) => {
     if (e.code == "ArrowLeft") {
         slideLeft();
@@ -68,7 +92,10 @@ document.addEventListener('keyup', (e) => {
         slideDown();
         setTwo();
     }
-    document.getElementById("score").innerText = score;
+    // document.getElementById("score").innerText = score;
+    document.getElementById("score").innerHTML = score;
+
+
 })
 
 function filterZero(row){
@@ -186,6 +213,10 @@ function hasEmptyTile() {
     }
     return false;
 }
+
+
+
+// Audio button
 const gameAudio = document.getElementById("gameAudio");
 const audioToggleBtn = document.getElementById("audioToggle");
 
