@@ -1,4 +1,4 @@
-
+/* Body for background.. */
 body{
     background-image: url(Puzzle\ Square\ background.webp);
     background-repeat: no-repeat;
@@ -6,6 +6,8 @@ body{
     background-size: cover;
     backface-visibility:visible;
 }
+
+/* Set of instructions. */
 strong{
     text-align: center;
     font-family: New Rocker;
@@ -14,6 +16,8 @@ strong{
     font-size: x-large;
     
 }
+
+/* Audiotoggle button. */
 #audioToggle{
     position: absolute;
     left: 1300px;
@@ -21,9 +25,13 @@ strong{
     font-family: New Rocker;
     background-color: red;
 }
+
+/* Instruction */
 h1{
     font-family:New Rocker;
 }
+
+/* Previous and next button hover. */
 a {
     text-decoration: none;
     display: inline-block;
@@ -34,7 +42,7 @@ a {
     background-color: #f30202;
     color: black;
   }
-  
+  /* Previous button */
   .previous {
     background-color: #f70505;
     color: black;
@@ -43,6 +51,7 @@ a {
     top: 650px;
   }
   
+  /* Next button */
   .next {
     background-color: #f83104;
     color: rgb(7, 0, 0);
@@ -51,7 +60,7 @@ a {
     left: 1300px;
   }
   
-
+/* Responsive design for mobile version */
   @media only screen and (max-width: 760px) {
     body {
         position: fixed;
@@ -67,21 +76,18 @@ a {
     
     }
 
-    /* #board {
-        width: 400px;
-        height: 400px;
-        border: 6px solid #030200;
-    } */
-
+/* Previous button for smaller screens */
     .previous {
-        top: 650px; /* Adjust the position for smaller screens */
+        top: 650px; 
     }
-
+/* Next button for smaller screens. */
     .next{
         left: 200px;
     }
 
+
+ /* Audiotoggle button  for smaller screens */
     #audioToggle {
-        left: 100px; /* Adjust the position for smaller screens */
+        left: 100px;
     }
 }

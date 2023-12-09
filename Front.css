@@ -1,34 +1,38 @@
 /* body */
 body{
-    background-image: url(Puzzle\ Square\ background.webp);
+    background-image: url(MUHAMMAD\ THALHA\ PUZZLE.mp4);
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* heading */
-h1{
-    position: absolute;
-    left: 550px;
-    top: 200px;
-    color: #000;
-    font-family: Nico Moji;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
+
+/* Video insertion:.... */
+#myVideo {
+    position: fixed;
+    bottom: -4px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
 /* Start button */
 .button1{
     position: absolute;
     font-family: Nico Moji;
-    left: 700px;
-    top: 400px;
+    left: 760px;
+    top: 500px;
     width: 100px;
     height: 40px;
     color: black;
     background-color: #FA0707;
+    animation: mymove 1s infinite;
+    box-shadow: 10px 10px red;
 }
-/* audio buttonn  */
+@keyframes mymove {
+    50% {box-shadow: 20px 20px 30px red;}
+  }
+
+/* audio button  */
 #audioToggle{
     position: absolute;
     font-family: New Rocker;
@@ -37,7 +41,7 @@ h1{
     background-color: red;
 }
 /* responsive design for moblie version */
-   @media only screen and (max-width: 760px) {
+   @media only screen and (max-width: 800px) {
     body {
         position: fixed;
         top: 0;
@@ -48,26 +52,13 @@ h1{
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        z-index: -1;
-    
     }
 
 /* music button */
     #audioToggle {
         left: 100px; 
     }
-/* Puzzle  Square  */
-    h1{
-        position: absolute;
-        left: 40px;
-        top: 200px;
-        color: #000;
-        font-family: Nico Moji;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
+
     /* Music button */
     .button1{
         position: absolute;
@@ -78,6 +69,20 @@ h1{
         height: 40px;
         color: black;
         background-color: #FA0707;
+        animation: mymove 5s infinite;
     }
+
+    @keyframes mymove {
+        50% {box-shadow: 20px 20px 30px red;}
+      }
+
+    #myVideo {
+        position: fixed;
+        bottom: 1px;
+        right: 50px;
+        min-width: 50%;
+        min-height: 50%;
+      }
     
 }
+

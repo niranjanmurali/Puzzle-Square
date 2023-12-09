@@ -1,3 +1,4 @@
+// Game audio functions.
 const gameAudio = document.getElementById("gameAudio");
 const audioToggleBtn = document.getElementById("audioToggle");
 
@@ -48,12 +49,3 @@ const savedPosition = sessionStorage.getItem("audioPlaybackPosition");
 if (savedPosition) {
   gameAudio.currentTime = parseFloat(savedPosition);
 }
-
-// Stop the audio when the game stops
-stopButton.addEventListener("click", () => {
-  controls.classList.remove("hide");
-  stopButton.classList.add("hide");
-  startButton.classList.remove("hide");
-  clearInterval(interval);
-  pauseAudio();
-});

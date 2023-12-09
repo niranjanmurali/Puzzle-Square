@@ -20,19 +20,20 @@ hr {
     background-repeat:repeat;
     overflow: hidden;
     backface-visibility: visible;
-    /* border: 6px solid #030200; */
-
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
+/* Score display.. */
 #score{
     color: red;
 }
+/* Scorecard */
 h2{
     color: red;
 }
 
+/* Tile css */
 .tile {
     width: 90px;
     height: 90px;
@@ -112,6 +113,8 @@ h2{
     background-color: red;
     color: black;
 }
+
+/* Previous page.. */
 a {
     text-decoration: none;
     display: inline-block;
@@ -123,6 +126,7 @@ a {
     color: black;
   }
   
+  /* Previous button. */
   .previous {
     background-color: red;
     color: black;
@@ -130,6 +134,8 @@ a {
     left: 10px;
     top: 650px;
   }
+
+  /* Audio button. */
 #audioToggle{
     position: absolute;
     left: 1300px;

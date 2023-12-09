@@ -1,3 +1,4 @@
+// Game functioning code.
 var board;
 var score = 0;
 var rows = 4;
@@ -40,6 +41,7 @@ function setGame() {
 
 }
 
+// Functions for controlling buttons.
 function updateTile(tile, num) {
     tile.innerText = "";
     tile.classList.value = ""; //clear the classList
@@ -68,12 +70,9 @@ up.addEventListener("click",function(){
 down.addEventListener("click",function(){
     slideDown();
     setTwo();
-
-    // document.getElementById("score").innerHTML = score;
-
 });
 
-
+// Controllers.
 document.addEventListener('keyup', (e) => {
     if (e.code == "ArrowLeft") {
         slideLeft();
@@ -92,10 +91,9 @@ document.addEventListener('keyup', (e) => {
         slideDown();
         setTwo();
     }
-    // document.getElementById("score").innerText = score;
     document.getElementById("score").innerHTML = score;
-
-
+    console.log("Scores:",score)
+    localStorage.setItem("score",score)
 })
 
 function filterZero(row){
@@ -120,6 +118,8 @@ function slide(row) {
     return row;
 }
 
+//Slide left to score. 
+console.log("score",score)
 function slideLeft() {
     for (let r = 0; r < rows; r++) {
         let row = board[r];
@@ -133,6 +133,7 @@ function slideLeft() {
     }
 }
 
+//Slide Right to score.
 function slideRight() {
     for (let r = 0; r < rows; r++) {
         let row = board[r];         //[0, 2, 2, 2]
@@ -146,7 +147,7 @@ function slideRight() {
         }
     }
 }
-
+//Slide Up to score.
 function slideUp() {
     for (let c = 0; c < columns; c++) {
         let row = [board[0][c], board[1][c], board[2][c], board[3][c]];
@@ -164,6 +165,7 @@ function slideUp() {
     }
 }
 
+//Slide Down to score.
 function slideDown() {
     for (let c = 0; c < columns; c++) {
         let row = [board[0][c], board[1][c], board[2][c], board[3][c]];
@@ -183,8 +185,10 @@ function slideDown() {
     }
 }
 
+// Redirecting to the gameover page after the tiles blocked.
 function setTwo() {
     if (!hasEmptyTile()) {
+        location.href="./gameover.html"
         return;
     }
     let found = false;
@@ -215,7 +219,7 @@ function hasEmptyTile() {
 }
 
 
-
+// Audio Controllers.
 // Audio button
 const gameAudio = document.getElementById("gameAudio");
 const audioToggleBtn = document.getElementById("audioToggle");
@@ -268,11 +272,4 @@ if (savedPosition) {
   gameAudio.currentTime = parseFloat(savedPosition);
 }
 
-// Stop the audio when the game stops
-stopButton.addEventListener("click", () => {
-  controls.classList.remove("hide");
-  stopButton.classList.add("hide");
-  startButton.classList.remove("hide");
-  clearInterval(interval);
-  pauseAudio();
-});
+// Audio code ends...//

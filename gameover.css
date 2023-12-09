@@ -1,0 +1,149 @@
+/* Body background. */
+body{
+    background-image: url(game12e345.webp);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: mymove 1s infinite;
+    box-shadow: 5px 2px 5px 2px red;
+    border-color: red;
+}
+
+@keyframes mymove {
+    100% {box-shadow: 20px 30px 50px red greenyellow red; }
+  }
+
+  /*ScoreCard  */
+#Scorecard{
+    font-size: xx-large;
+    color: rgb(7, 0, 0);
+    position: absolute;
+    left: 640px;
+    top: 250px;
+    width: 300px;
+    background-color: rgb(250, 4, 4); 
+    animation: mymove 1s infinite;
+    box-shadow: 5px 5px red;   
+}
+
+@keyframes mymove {
+    50% {box-shadow: 20px 30px 50px red;}
+  }
+
+  /* Audio button */
+  #audioToggle{
+    position: absolute;
+    font-family: New Rocker;
+    left: 1400px;
+    top: 20px;
+    background-color: red;
+}
+
+/* Restart button. */
+#Restart{
+    font-size: x-large;
+    color: black;
+    position: absolute;
+    left: 740px;
+    top: 520px;
+    background-color: red;
+    box-shadow: 5px 5px red;
+    animation: mymove 1.5s infinite;
+}
+@keyframes mymove {
+    50% {box-shadow: 20px 30px 50px red;}
+  }
+
+/* Game over Animate */
+#GAME_OVER{
+   position: absolute;
+   left: 660px;
+   top: 400px; 
+   width: 250px;
+   height: 50px;
+   color: black;
+   font-size: xx-large;
+   animation: mymove 2.5s infinite;
+   box-shadow: 5px 5px red;
+   background-color: red;
+}
+@keyframes mymove {
+    50% {box-shadow: 20px 30px 50px red;}
+  }
+
+  /* Responsive design for mobile version. */
+  @media only screen and (max-width: 760px){
+    body{
+        background-image: url(game12e345.webp);
+        overflow: hidden;
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        z-index: -1;
+    } 
+
+    /* Scorecard for mobile version. */
+    #Scorecard{
+        font-size: xx-large;
+        color: rgb(7, 0, 0);
+        position: absolute;
+        left: 140px;
+        top: 250px;
+        width: 300px;
+        background-color: rgb(250, 4, 4); 
+        animation: mymove 1.5s infinite;
+         box-shadow: 5px 5px red;   
+    }
+    
+    @keyframes mymove {
+        50% {box-shadow: 20px 30px 50px red;}
+      }
+
+      /* Restart button for mobile version.*/
+      #Restart{
+        font-size: x-large;
+        color: black;
+        position: absolute;
+        left: 250px;
+        top: 520px;
+        background-color: red;
+        box-shadow: 5px 5px red;
+        animation: mymove 1s infinite;
+    }
+    @keyframes mymove {
+        50% {box-shadow: 20px 30px 50px red;}
+      }
+    
+    /* Game over display for mobile version. */
+    #GAME_OVER{
+       position: absolute;
+       left: 170px;
+       top: 400px; 
+       width: 250px;
+       height: 50px;
+       color: black;
+       font-size: xx-large;
+       animation: mymove 2.5s infinite;
+       box-shadow: 5px 5px red;
+       background-color: red;
+    }
+    @keyframes mymove {
+        50% {box-shadow: 20px 30px 50px red;}
+      }
+
+      /* Audio button for mobile version. */
+      #audioToggle{
+        position: absolute;
+        font-family: New Rocker;
+        left: 390px;
+        top: 20px;
+        background-color: red;
+    }
+  }
